@@ -15,23 +15,23 @@ int main()
             break;
         case '=':
             printf("Result = %d\n", stack[cein - 1]);
-            cein--;
+            cein = cein - 1;
             break;
         case '*':
             stack[cein - 2] = stack[cein - 1] * stack[cein - 2];
-            cein--;
+            cein = cein - 1;
             break;
         case '/':
             stack[cein - 2] = stack[cein - 2] / stack[cein - 1];
-            cein--;
+            cein = cein - 1;
             break;
         case '+':
             stack[cein - 2] = stack[cein - 2] + stack[cein - 1];
-            cein--;
+            cein = cein - 1;
             break;
         case '-':
             stack[cein - 2] = stack[cein - 2] - stack[cein - 1];
-            cein--;
+            cein = cein - 1;
             break;
 
         default:
@@ -44,7 +44,7 @@ int main()
             else
             {
                 stack[cein] = x;
-                cein++;
+                cein = cein + 1;
             }
         }
     }
