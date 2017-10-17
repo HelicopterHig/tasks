@@ -38,7 +38,7 @@ int main()
             ungetc(c, stdin);
             if (scanf("%d", &x) != 1)
             {
-                fprintf(stderr, "Can't read integer\n");
+                fprintf(stderr, "It's not possible to read integer values\n");
                 return -1;
             }
             else
