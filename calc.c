@@ -3,7 +3,7 @@ int main()
 {
     int stack[1000];
 
-    int cein = 0; /*  cein . This is  cell.Then (cein-1) top of stack*/
+    int cein = 0;
     while (!feof(stdin))
     {
         int c = getchar();
